@@ -1,6 +1,5 @@
-package com.nzitjmed.week1;
+package com.nzitjmed.week1.day01;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
