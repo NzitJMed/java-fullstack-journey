@@ -2,11 +2,10 @@ package com.nzitjmed.week1.day03;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AccountTest {
-    @org.testng.annotations.Test
+    @org.junit.jupiter.api.Test
     @DisplayName("Should create account with valid parameters")
     void testCreateAccount() {
         Account acc = new Account("ACC-001", "Alice", 1000.0);

@@ -45,7 +45,7 @@ public class Account implements Comparable<Account>{
             throw new IllegalArgumentException("Amount must be positive");
         }
         if(amount > this.balance){
-            throw new InsufficientFundsException(String.format("Insufficient funds balace=%.2f,requestedd=%.2f", this.balance, amount));
+            throw new InsufficientFundsException(String.format("Insufficient funds balance=%.2f,requested=%.2f", this.balance, amount));
         }
         this.balance -= amount;
     }
@@ -59,7 +59,7 @@ public class Account implements Comparable<Account>{
             throw new IllegalArgumentException("Amount must be positive");
         }
         if(amount > this.balance){
-            throw new InsufficientFundsException(String.format("Insufficient funds + this.balance=%.2f, requested=%.2f",this.balance, amount));
+            throw new InsufficientFundsException(String.format("Insufficient funds: balance=%.2f, requested=%.2f",this.balance, amount));
         }
         this.balance -= amount;
         other.balance+=amount;
@@ -85,7 +85,7 @@ public class Account implements Comparable<Account>{
     public String getAccountNumber() {
         return accountNumber;
     }
-    public double getCreated(){ return createdAt.getSecond();}
+    public double LocalDateTime(){ return createdAt.getSecond();}
 
 
     @Override
